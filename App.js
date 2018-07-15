@@ -1,13 +1,30 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View, ScrollView } from 'react-native';
+import Header from './src/components/Header';
+import SimpleCard from './src/components/SimpleCard';
+import FullCard from './src/components/FullCard'
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+        <Header message='PEOPLE'/>
+        <FullCard />
+        {/* <ScrollView style={ styles.scrollView }>
+          <SimpleCard userName='Daniel Nascimento'/>
+          <SimpleCard userName='Danielle Cristhina'/>
+          <SimpleCard userName='Diogo Fernandes'/>
+          <SimpleCard userName='Jaqueline Fernandes'/>
+          <SimpleCard userName='Lucas Nascimento'/>
+          <SimpleCard userName='Paloma Nascimento'/>
+          <SimpleCard userName='Gustavo Mendonça'/>
+          <SimpleCard userName='Yasmin Mendonça'/>
+          <SimpleCard userName='Jackson Nascimento'/>
+          <SimpleCard userName='Raimunda Mendonça'/>
+          <SimpleCard userName='Kerolin Nascimento'/>
+          <SimpleCard userName='Izolda Barbosa'/>
+        </ScrollView> */}
+
       </View>
     );
   }
@@ -15,9 +32,9 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    
   },
+  scrollView: {
+    padding: 10
+  }
 });
