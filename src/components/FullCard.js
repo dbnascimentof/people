@@ -10,10 +10,10 @@ export default class FullCard extends React.Component {
                     style={ styles.fullImage }
                 />
                 <View  style={ styles.userInfoContainer }>
-                    <Text style={ styles.userinfo }>Nome: Daniel Nascimento</Text>
-                    <Text style={ styles.userinfo }>E-Mail: filhodan@gmail.com</Text>
-                    <Text style={ styles.userinfo }>Mobile: (11) 98010-0012</Text>
-                    <Text style={ styles.userinfo }>User: dnascimento</Text>
+                    <Text style={ styles.userinfo }>Nome: { this.props.person.userName }</Text>
+                    <Text style={ styles.userinfo }>E-Mail: { this.props.person.userMail }</Text>
+                    <Text style={ styles.userinfo }>Mobile: { this.props.person.userPhone }</Text>
+                    <Text style={ styles.userinfo }>User: { this.props.person.user }</Text>
                 </View>
             </View>
         );

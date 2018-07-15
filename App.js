@@ -6,10 +6,17 @@ import FullCard from './src/components/FullCard'
 
 export default class App extends React.Component {
   render() {
+    let person = {
+      userName: 'Daniel Nascimento',
+      userMail: 'filhodan@gmail.com',
+      userPhone: '(11) 98010-0012',
+      user: 'dnascimento'
+    }
+
     return (
       <View style={styles.container}>
         <Header message='PEOPLE'/>
-        <FullCard />
+        <FullCard person={ person }/>
         {/* <ScrollView style={ styles.scrollView }>
           <SimpleCard userName='Daniel Nascimento'/>
           <SimpleCard userName='Danielle Cristhina'/>
